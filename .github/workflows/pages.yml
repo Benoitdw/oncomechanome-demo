@@ -1,4 +1,4 @@
-# Deploys site/ to GitHub Pages (oncomechanome.org) on every push to main.
+# Deploys site/ to GitHub Pages (oncomechanome.com) on every push to main.
 #
 # Nothing is built here: the demo is prerendered from a database this runner cannot reach, so the
 # OncoMechanome repository builds it (scripts/deploy_demo.sh) and pushes only the output.
