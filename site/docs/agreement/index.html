@@ -1,0 +1,178 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="icon" href="/favicon_bg.png"><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v7.1.4"><title>Agreement · OncoMechanome</title><link rel="stylesheet" href="/_astro/Layout.DN4zeY1D.css"></head><body class="min-h-screen bg-slate-50 text-slate-900"><div class="flex min-h-screen"><aside class="w-56 shrink-0 border-r border-slate-200 bg-white p-4"><a href="/" class="mb-6 flex items-center gap-2 text-lg font-semibold tracking-tight"><img src="/favicon_black.svg" alt="" class="h-10 w-10 rounded object-cover">OncoMechanome</a><div class="mb-4"><style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="Z17oRKj" component-url="/_astro/SiteSearch.C_tLKfMY.js" component-export="default" renderer-url="/_astro/client.svelte.ftY2z8or.js" props="{&quot;base&quot;:[0,&quot;/&quot;]}" ssr client="idle" opts="{&quot;name&quot;:&quot;SiteSearch&quot;,&quot;value&quot;:true}" await-children><!--[--><div class="relative"><input value="" type="search" placeholder="BRAF V600E…   Ctrl K" aria-label="Search a gene or variant" class="w-full rounded border border-slate-300 px-2 py-1.5 text-sm"/> <!--[-1--><!--]--></div><!--]--><!--astro:end--></astro-island></div><nav class="flex flex-col gap-1"><a href="/" class="rounded px-2 py-1.5 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900">Coverage</a><a href="/genes" class="rounded px-2 py-1.5 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900">Genes</a><a href="/stats" class="rounded px-2 py-1.5 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900">Stats</a><a href="/docs" class="rounded px-2 py-1.5 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900">Docs</a></nav></aside><main class="min-w-0 flex-1 p-8"><h1 class="mb-6 text-2xl font-semibold">Agreement</h1><div class="flex gap-8"><nav class="w-48 shrink-0 text-sm"><ul class="space-y-1"><li><a href="/docs/vocabulary" class="block rounded px-2 py-1 text-slate-600 hover:bg-slate-50">Vocabulary</a></li><li><a href="/docs/agreement" class="block rounded px-2 py-1 bg-slate-100 font-medium">Agreement</a></li></ul></nav><article class="prose prose-slate min-w-0 max-w-none prose-pre:overflow-x-auto"><p>Agreement is computed by <code>oncomechanome/chain/agreement.py</code>, over the indices defined in
+<code>oncomechanome/chain/consensus.py</code>. No model runs there, and nothing in it knows how many annotators
+there are — every measure takes the list of valid answers and reduces over it, so a fourth or fifth
+annotator changes a number and never a signature.</p>
+<h2 id="the-two-consensus-indices">The two consensus indices</h2>
+<p>Each variant carries two numbers about its <strong>annotators</strong> — never about the arbiter, which is not
+one of the answers being compared. Both are defined over the set of <code>K</code> valid answers to one
+variant, and both are pair-based: they compare answers two at a time and average, rather than
+scoring the set as a whole. That is what keeps one discordant answer from dominating — it degrades
+only the <code>K-1</code> pairs it belongs to.</p>
+<p>They live in <code>oncomechanome/chain/consensus.py</code>, the one definition every caller uses — the pipeline,
+and any study measuring an arbiter against its own repeated draws. Between-model agreement and
+self-consistency are only comparable if a score of 0.6 means the same thing in both, and it cannot
+if each caller carries its own copy of the formula.</p>
+<p><strong>Label consensus</strong> — for every unordered pair of label sets <code>Li</code>, <code>Lj</code>, both the Jaccard index and
+the Szymkiewicz–Simpson overlap coefficient, averaged over the <code>K(K-1)/2</code> pairs:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>J = |Li ∩ Lj| / |Li ∪ Lj|        O = |Li ∩ Lj| / min(|Li|, |Lj|)</span></span></code></pre>
+<p>The two are reported together because the gap between them is informative. The Jaccard divides by
+the union, so an answer naming fewer steps drags it down; the overlap coefficient divides by the
+smaller set, so containment reads as unanimity — a one-label answer inside a two-label one scores
+1.0. <strong>The gap is the share of the apparent disagreement that is incompleteness rather than
+conflict.</strong> Neither is read alone, and both are read beside <code>n_clusters</code>, the count of distinct
+label sets: a mean of 0.5 comes equally from one outlier against a unanimous rest and from everyone
+half-agreeing, and only the count separates them.</p>
+<p><strong>Order consensus</strong> — label consensus is blind to the structure of the graph: two annotators can
+name exactly the same steps and order them oppositely. The order is therefore scored separately,
+and <strong>restricted to the label pairs the two DAGs have in common</strong>, so the two axes stay independent
+rather than one contaminating the other.</p>
+<p>Inside one DAG, each unordered pair of labels <code>{x, y}</code> gets</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>r(x, y) = +1  if the step carrying x reaches the step carrying y</span></span>
+<span class="line"><span>          -1  if y reaches x</span></span>
+<span class="line"><span>           0  if neither reaches the other</span></span></code></pre>
+<p>taken over the <strong>transitive closure</strong>, so <code>A → B → C</code> places <code>A</code> before <code>C</code> with no direct edge.
+<code>r = 0</code> is a positive claim rather than the absence of one: it records that the two steps sit on
+parallel branches, that they happen independently. A pair is <strong>concordant</strong> when <code>ri = rj</code> and
+<strong>discordant</strong> otherwise — so agreeing that two steps are parallel is agreement, while “sequential
+in one answer, parallel in the other” is a structural disagreement and counts against. The counts
+are <strong>pooled</strong> over all <code>K(K-1)/2</code> annotator pairs rather than averaged per pair, because at these
+graph sizes a single pair contributes a handful of comparable label pairs at most, its ratio takes
+the values 0 or 1 almost exclusively, and the mean of such ratios estimates nothing:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>C = n_concordant / (n_concordant + n_discordant)</span></span></code></pre>
+<p>Stored beside it, <code>undefined</code> counts the pairs of answers sharing fewer than two labels: nothing to
+order, which is a lack of overlap and not a disagreement, so it enters neither the numerator nor
+the denominator. Watch what it correlates with — the pairs it drops are the pairs that already
+disagreed about labels, so the score is measured on the answers that agree most, and it is only
+honest next to that count.</p>
+<p><strong>An index with nothing to measure is <code>null</code>, never 1.0.</strong> A variant with one surviving answer has
+no pair to compare, and calling that perfect agreement would enter an average over variants as the
+strongest evidence in the run rather than as an absent measurement. The site renders it as an em
+dash, and the dataset-wide means on the stats page report how many variants they were computed
+over.</p>
+<h2 id="why-two-axes">Why two axes</h2>
+<p>Agreeing on <em>what a variant does</em> is not agreeing on <em>why</em>. A set of categories cannot express the
+difference; a chain can, and separating the two is the reason the annotation format changed.</p>
+<p>The measures below refine the two indices above: where those say <em>how much</em> the panel agreed, these
+say <em>which part</em> of the graph it disagreed about.</p>
+<p><strong>Axis 1 — what</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Measure</th><th>Compares</th></tr></thead><tbody><tr><td><code>label_set</code></td><td>the labels each answer used — carries the label consensus above</td></tr><tr><td><code>label_slots</code></td><td>label together with its slot values</td></tr><tr><td><code>covered</code></td><td>whether the answers agree the vocabulary fits at all</td></tr></tbody></table>
+<p><strong>Axis 2 — why</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Measure</th><th>Compares</th></tr></thead><tbody><tr><td><code>order</code></td><td>the relative order of the labels a pair of answers shares — the order consensus above</td></tr><tr><td><code>edges</code></td><td>the ordered <code>A → B</code> pairs</td></tr><tr><td><code>paths</code></td><td>every root-to-sink path, as a sequence</td></tr><tr><td><code>branch_structure</code></td><td>roots, sinks and path count per answer</td></tr></tbody></table>
+<p>Each of these reports a <strong>mean pairwise Jaccard</strong> and a <strong>cluster count</strong>. Both are needed: a mean
+of 0.5 is produced equally by two models half-agreeing and by one outlier against an otherwise
+unanimous rest, and those are different situations.</p>
+<p><code>order</code> is the exception: it is keyed on labels alone, so <code>target</code> cannot move it and it holds the
+same value on both keyings below. It is stored on both rows anyway, so a reader of either has the
+headline numbers without a second query.</p>
+<h2 id="step-identity-between-answers">Step identity between answers</h2>
+<p>Step ids are local to one answer — <code>s1</code> from one annotator is not <code>s1</code> from another. Cross-answer
+matching uses <code>(label, slot values, target)</code>.</p>
+<p><code>target</code> is free text, so <strong>every measure is computed twice</strong>, once with it in the key and once
+without, and both are stored. This is not redundancy:</p>
+<ul>
+<li>keyed <strong>with</strong> <code>target</code>, the two <code>Increase binding affinity · with: protein</code> steps of
+<code>PPP2R1A R183W</code> stay distinct — one is STRN3, one is TIPRL1, and nothing else tells them apart;</li>
+<li>keyed <strong>without</strong>, two models that named the same partner differently still match.</li>
+</ul>
+<p>Reporting only one of the two keyings hides which effect you are looking at — whether the models
+disagree about causality, or merely about what to call a partner. A step’s <code>quantity</code> is never part
+of its identity: two annotators that name the same event on the same partner agree, whether or not
+they found the same figure for it.</p>
+<h2 id="consensus-bands">Consensus bands</h2>
+<p>The site reads the label Jaccard in bands, to colour a lollipop or order a queue:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Band</th><th>Label Jaccard</th></tr></thead><tbody><tr><td><strong>agreement</strong></td><td>≥ 0.6</td></tr><tr><td><strong>partial</strong></td><td>between 0.2 and 0.6</td></tr><tr><td><strong>split</strong></td><td>&#x3C; 0.2 — the answers describe different mechanisms, not the same one in different terms</td></tr><tr><td><strong>single answer</strong></td><td>undefined — fewer than two usable answers</td></tr></tbody></table>
+<p>A split panel is what sends a variant to the priority queue, together with an arbiter that found
+the vocabulary did not fit and a variant no annotator answered. The split threshold is
+<code>SPLIT_BELOW</code> in <code>oncomechanome/chain/agreement.py</code>, mirrored in <code>site/src/lib/consensus.ts</code>; nothing is
+stored, so moving a threshold needs no recomputation.</p>
+<p>The bands describe what is measured, not how hard the variant is. A split panel is where the
+<em>models</em> disagree, which is not the same as where the <em>biology</em> is hard.</p>
+<p>Nothing inside the pipeline is decided from them. The arbiter’s prompt is byte-identical whatever
+the panel’s agreement, it is never told the vote count or that anyone agreed, and its reasoning
+budget is unconstrained unless a run caps it with <code>--arbiter-effort</code>.</p>
+<p>v0.1 named four <em>strata</em> instead, built on the verdict every closing step carried. The verdict is
+gone — an annotation no longer concludes on a gain or a loss — and the strata went with it.</p>
+<h2 id="failures-are-not-disagreement">Failures are not disagreement</h2>
+<p>A model whose call errored, or whose answer was dropped after its repair attempt, is <strong>excluded</strong>
+from the panel and counted in <code>n_dropped</code> — never passed in as an empty answer. Counting it as a
+dissenter would record real disagreement where there was only a failed call, for the rest of that
+run’s life.</p>
+<p>A single surviving answer has no consensus at all, rather than a perfect one: it agrees with nothing
+and disagrees with nothing, and claiming consensus would report the least-corroborated variant in
+the run as its best-corroborated one.</p>
+<h2 id="the-pairwise-matrix">The pairwise matrix</h2>
+<p>Alongside the axes, the full N×N comparison is stored, <strong>keyed by real model id</strong>. It is what
+answers the question the whole cross-vendor design rests on: does the panel split where a
+single-vendor panel was unanimous? If a fourth annotator never moves the agreement, that annotator
+bought nothing — and this matrix is what makes that measurable rather than assumed.</p></article></div></main></div><dialog id="demo-notice" aria-labelledby="demo-notice-title" class="m-auto w-[calc(100%-2rem)] max-w-lg rounded-lg border border-slate-200 bg-white p-6 text-slate-800 shadow-xl backdrop:bg-slate-900/40"><h2 id="demo-notice-title" class="mb-3 text-lg font-semibold">This is a demo of OncoMechanome</h2><div class="space-y-3 text-sm text-slate-600"><p>OncoMechanome annotates cancer variants with the chain of molecular mechanisms that links the amino-acid change to the change in protein activity. Each chain is built step by step by a panel of LLM annotators, every step backed by a cited source, then consolidated by an arbiter.</p><p>This demo shows a sample of annotated variants. The full version, covering the complete set of gain-of-function variants, will be available soon.</p><p>Questions or feedback: <a class="text-sky-700 underline" href="mailto:benoit.de.witte@ulb.be">benoit.de.witte@ulb.be</a></p></div><form method="dialog" class="mt-5 flex justify-end"><button type="submit" class="rounded bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-700">Explore the demo</button></form></dialog><script type="module">var e=`oncomechanome:demo-notice-seen`,t=document.getElementById(`demo-notice`),n=!1;try{n=localStorage.getItem(e)===`1`}catch{}t&&!n&&(t.addEventListener(`close`,()=>{try{localStorage.setItem(e,`1`)}catch{}}),t.showModal());</script></body></html>
