@@ -1,4 +1,87 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="icon" href="/favicon_bg.png"><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v7.1.4"><title>Vocabulary · OncoMechanome</title><link rel="stylesheet" href="/_astro/Layout.DN4zeY1D.css"></head><body class="min-h-screen bg-slate-50 text-slate-900"><div class="flex min-h-screen"><aside class="w-56 shrink-0 border-r border-slate-200 bg-white p-4"><a href="/" class="mb-6 flex items-center gap-2 text-lg font-semibold tracking-tight"><img src="/favicon_black.svg" alt="" class="h-10 w-10 rounded object-cover">OncoMechanome</a><div class="mb-4"><style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="Z17oRKj" component-url="/_astro/SiteSearch.C_tLKfMY.js" component-export="default" renderer-url="/_astro/client.svelte.ftY2z8or.js" props="{&quot;base&quot;:[0,&quot;/&quot;]}" ssr client="idle" opts="{&quot;name&quot;:&quot;SiteSearch&quot;,&quot;value&quot;:true}" await-children><!--[--><div class="relative"><input value="" type="search" placeholder="BRAF V600E…   Ctrl K" aria-label="Search a gene or variant" class="w-full rounded border border-slate-300 px-2 py-1.5 text-sm"/> <!--[-1--><!--]--></div><!--]--><!--astro:end--></astro-island></div><nav class="flex flex-col gap-1"><a href="/" class="rounded px-2 py-1.5 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900">Coverage</a><a href="/genes" class="rounded px-2 py-1.5 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900">Genes</a><a href="/stats" class="rounded px-2 py-1.5 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900">Stats</a><a href="/docs" class="rounded px-2 py-1.5 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900">Docs</a></nav></aside><main class="min-w-0 flex-1 p-8"><h1 class="mb-6 text-2xl font-semibold">Vocabulary</h1><div class="flex gap-8"><nav class="w-48 shrink-0 text-sm"><ul class="space-y-1"><li><a href="/docs/vocabulary" class="block rounded px-2 py-1 bg-slate-100 font-medium">Vocabulary</a></li><li><a href="/docs/agreement" class="block rounded px-2 py-1 text-slate-600 hover:bg-slate-50">Agreement</a></li></ul></nav><article class="prose prose-slate min-w-0 max-w-none prose-pre:overflow-x-auto"><!-- GENERATED by scripts/export_docs.py from oncomechanome/chain/vocabulary.py. Do not edit by hand. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/favicon_bg.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Astro v7.1.4">
+    <title>Vocabulary · OncoMechanome</title>
+    <!-- Before first paint, so a desktop reader who folded the menu away does not see it flash open
+         on every page. Only the desktop choice is remembered; on a phone the menu always starts
+         closed. -->
+    <script>
+      try {
+        if (localStorage.getItem("oncomechanome:nav-collapsed") === "1") {
+          document.documentElement.dataset.navCollapsed = "";
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Layout.BHCTSAYH.css"></head>
+  <body class="min-h-screen bg-slate-50 text-slate-900">
+    <!-- The top bar: always on a phone, where the menu is a drawer behind it; on a desktop only once
+         the sidebar has been folded away, to bring it back. -->
+    <header id="topbar" class="sticky top-0 z-30 flex h-14 items-center gap-3 border-b border-slate-200 bg-white px-4">
+      <button type="button" id="nav-open" aria-controls="sidebar" aria-expanded="false" aria-label="Open the menu" class="-ml-2 rounded p-2 text-slate-700 hover:bg-slate-100">
+        <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <a href="/" class="flex items-center gap-2 font-semibold tracking-tight">
+        <img src="/favicon_black.svg" alt="" class="h-8 w-8 rounded object-cover">
+        OncoMechanome
+      </a>
+    </header>
+
+    <div id="nav-backdrop" class="fixed inset-0 z-40 bg-slate-900/40"></div>
+
+    <div class="flex min-h-screen">
+      <aside id="sidebar" class="fixed inset-y-0 left-0 z-50 flex w-64 flex-col overflow-y-auto border-r border-slate-200 bg-white p-4 transition-transform duration-200">
+        <div class="mb-6 flex items-center justify-between gap-2">
+          <a href="/" class="flex min-w-0 items-center gap-2 font-semibold tracking-tight">
+            <img src="/favicon_black.svg" alt="" class="h-9 w-9 shrink-0 rounded object-cover">
+            OncoMechanome
+          </a>
+          <button type="button" id="nav-close" aria-controls="sidebar" aria-label="Hide the menu" title="Hide the menu" class="shrink-0 rounded p-1.5 text-slate-400 hover:bg-slate-100 hover:text-slate-700">
+            <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M15 18l-6-6 6-6"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="mb-4">
+          <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="Z17oRKj" component-url="/_astro/SiteSearch.C_tLKfMY.js" component-export="default" renderer-url="/_astro/client.svelte.ftY2z8or.js" props="{&quot;base&quot;:[0,&quot;/&quot;]}" ssr client="idle" opts="{&quot;name&quot;:&quot;SiteSearch&quot;,&quot;value&quot;:true}" await-children><!--[--><div class="relative"><input value="" type="search" placeholder="BRAF V600E…   Ctrl K" aria-label="Search a gene or variant" class="w-full rounded border border-slate-300 px-2 py-1.5 text-sm"/> <!--[-1--><!--]--></div><!--]--><!--astro:end--></astro-island>
+        </div>
+        <nav class="flex flex-col gap-1">
+          <a href="/" class="rounded px-2 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900">
+                Coverage
+              </a><a href="/genes" class="rounded px-2 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900">
+                Genes
+              </a><a href="/stats" class="rounded px-2 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900">
+                Stats
+              </a><a href="/docs" class="rounded px-2 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900">
+                Docs
+              </a>
+        </nav>
+        
+      </aside>
+      <main class="flex min-w-0 flex-1 flex-col p-4 sm:p-6 lg:p-8">
+        <h1 class="mb-4 text-xl font-semibold sm:mb-6 sm:text-2xl">Vocabulary</h1>
+        <div class="flex-1">
+          
+  <div class="flex flex-col gap-6 lg:flex-row lg:gap-8">
+    <nav class="text-sm lg:w-48 lg:shrink-0">
+      <ul class="flex flex-wrap gap-1 lg:block lg:space-y-1">
+        <li>
+              <a href="/docs/vocabulary" class="block rounded px-2 py-1 bg-slate-100 font-medium">
+                Vocabulary
+              </a>
+            </li><li>
+              <a href="/docs/agreement" class="block rounded px-2 py-1 text-slate-600 hover:bg-slate-50">
+                Agreement
+              </a>
+            </li>
+      </ul>
+    </nav>
+    <article class="prose prose-slate min-w-0 max-w-none prose-pre:overflow-x-auto">
+      <!-- GENERATED by scripts/export_docs.py from oncomechanome/chain/vocabulary.py. Do not edit by hand. -->
 <p>This page is generated from <code>oncomechanome/chain/vocabulary.py</code>, the single source of truth. The Pydantic
 models, the providers’ JSON Schemas and the text of the prompts are all derived from that same
 module, so a label added there appears everywhere — including here.</p>
@@ -83,137 +166,740 @@ label added to the vocabulary without a matching file falls back to a neutral sh
 gap in the legend rather than breaking anything.</p>
 <h2 id="coverage">Coverage</h2>
 <p><code>covered: false</code> with an <code>uncovered_reason</code> is a useful answer, not a failure: how often it happens
-measures the coverage of this vocabulary.</p><div class="not-prose my-8"><h2 class="mb-2 text-xl font-semibold text-slate-900">The full vocabulary</h2><p class="mb-4 text-sm text-slate-600">27 labels in 5 families. A step carries one label, exactly one value for each slot that label declares, and — when a source reports one — a quantity.</p><div class="overflow-x-auto rounded-lg border border-slate-200"><table class="w-full border-collapse text-sm"><thead><tr class="border-b border-slate-200 bg-slate-50 text-left text-xs font-medium text-slate-500"><th class="px-3 py-2">Family</th><th class="px-3 py-2">Label</th><th class="px-3 py-2">Slot</th><th class="px-3 py-2">Allowed values</th></tr></thead><tbody><tr class="align-top border-t-2 border-slate-200"><td rowspan="7" class="border-r border-slate-100 px-3 py-2 align-top"><span class="flex items-center gap-1.5 whitespace-nowrap text-xs font-medium text-slate-700"><span class="inline-block h-2 w-2 shrink-0 rounded-full bg-indigo-500"></span>Interactions</span></td><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-indigo-50 text-indigo-800 ring-indigo-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+measures the coverage of this vocabulary.</p>
+      
+      <div class="not-prose my-8">
+  <h2 class="mb-2 text-xl font-semibold text-slate-900">The full vocabulary</h2>
+  <p class="mb-4 text-sm text-slate-600">
+    27 labels in 5 families. A step carries one label, exactly one
+    value for each slot that label declares, and — when a source reports one — a quantity.
+  </p>
+
+  <div class="overflow-x-auto rounded-lg border border-slate-200">
+    <table class="w-full border-collapse text-sm">
+      <thead>
+        <tr class="border-b border-slate-200 bg-slate-50 text-left text-xs font-medium text-slate-500">
+          <th class="px-3 py-2">Family</th>
+          <th class="px-3 py-2">Label</th>
+          <th class="px-3 py-2">Slot</th>
+          <th class="px-3 py-2">Allowed values</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="align-top border-t-2 border-slate-200">
+                  <td rowspan="7" class="border-r border-slate-100 px-3 py-2 align-top">
+                      <span class="flex items-center gap-1.5 whitespace-nowrap text-xs font-medium text-slate-700">
+                        <span class="inline-block h-2 w-2 shrink-0 rounded-full bg-indigo-500"></span>
+                        Interactions
+                      </span>
+                    </td>
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-indigo-50 text-indigo-800 ring-indigo-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="12" cy="12" r="5.5"/>
   <circle cx="32" cy="12" r="5.5"/>
   <path d="M17.5 12 h9" stroke-width="2.6"/>
 </svg>
-</span>Increase binding affinity</span><p class="mt-1 max-w-xs text-xs text-slate-600">Strengthens an interaction the wild-type protein already makes.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: Kd; Ki; kon/koff; competition IC50; relative BRET or pulldown signal</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">with:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">protein</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">self</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">ligand</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">nucleotide</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">substrate</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">DNA</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">RNA</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">membrane</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">metal ion</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-indigo-50 text-indigo-800 ring-indigo-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Increase binding affinity
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">Strengthens an interaction the wild-type protein already makes.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: Kd; Ki; kon/koff; competition IC50; relative BRET or pulldown signal
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">with:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">protein</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">self</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">ligand</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">nucleotide</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">substrate</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">DNA</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">RNA</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">membrane</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">metal ion</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-indigo-50 text-indigo-800 ring-indigo-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="22" cy="12" r="5.5"/>
 </svg>
-</span>Decrease binding affinity</span><p class="mt-1 max-w-xs text-xs text-slate-600">Weakens an interaction the wild-type protein makes, without abolishing it.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: Kd; Ki; kon/koff; competition IC50; relative BRET or pulldown signal</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">with:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">protein</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">self</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">ligand</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">nucleotide</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">substrate</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">DNA</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">RNA</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">membrane</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">metal ion</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-indigo-50 text-indigo-800 ring-indigo-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Decrease binding affinity
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">Weakens an interaction the wild-type protein makes, without abolishing it.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: Kd; Ki; kon/koff; competition IC50; relative BRET or pulldown signal
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">with:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">protein</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">self</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">ligand</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">nucleotide</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">substrate</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">DNA</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">RNA</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">membrane</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">metal ion</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-indigo-50 text-indigo-800 ring-indigo-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="10" cy="12" r="5.5"/>
   <circle cx="34" cy="12" r="5.5"/>
   <path d="M17 12 h4" />
   <path d="M27 12 h4"/>
   <path d="M22 8 l0 8" stroke-dasharray="2 2"/>
 </svg>
-</span>Loss of binding affinity</span><p class="mt-1 max-w-xs text-xs text-slate-600">Abolishes an existing contact: the source reports the interaction absent or below the detection limit of its assay. A weaker interaction is a decrease, not a loss.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: detection limit of the binding assay</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">with:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">protein</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">self</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">ligand</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">nucleotide</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">substrate</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">DNA</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">RNA</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">membrane</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">metal ion</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="2" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-indigo-50 text-indigo-800 ring-indigo-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Loss of binding affinity
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">Abolishes an existing contact: the source reports the interaction absent or below the detection limit of its assay. A weaker interaction is a decrease, not a loss.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: detection limit of the binding assay
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">with:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">protein</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">self</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">ligand</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">nucleotide</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">substrate</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">DNA</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">RNA</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">membrane</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">metal ion</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="2" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-indigo-50 text-indigo-800 ring-indigo-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="11" cy="12" r="5.5"/>
   <path d="M17 9 h8 l-2.5-2.5 M17 15 h8 l-2.5 2.5"/>
   <circle cx="33" cy="7" r="3.5"/>
   <circle cx="33" cy="18" r="3.5" stroke-dasharray="2 2"/>
 </svg>
-</span>Altered binding specificity</span><p class="mt-1 max-w-xs text-xs text-slate-600">The site still binds, but what it accepts changes. Both ends are recorded: what is no longer recognised, and what is now.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: preference ratio between the new and the former partner</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">from:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">cognate ligand</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">cognate substrate</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">cognate protein</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">cognate DNA</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">cognate RNA</span></span></td></tr><tr class="align-top"><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">to:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">non-cognate ligand</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">antagonist</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">non-cognate substrate</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">non-cognate protein</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">non-cognate DNA</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">non-cognate RNA</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-indigo-50 text-indigo-800 ring-indigo-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Altered binding specificity
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">The site still binds, but what it accepts changes. Both ends are recorded: what is no longer recognised, and what is now.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: preference ratio between the new and the former partner
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">from:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">cognate ligand</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">cognate substrate</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">cognate protein</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">cognate DNA</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">cognate RNA</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top">
+                  
+
+                  
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">to:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">non-cognate ligand</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">antagonist</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">non-cognate substrate</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">non-cognate protein</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">non-cognate DNA</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">non-cognate RNA</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-indigo-50 text-indigo-800 ring-indigo-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="12" cy="12" r="5.5"/>
   <circle cx="32" cy="12" r="5.5" stroke-dasharray="2 2"/>
   <path d="M17.5 12 h9"/>
   <path d="M32 4.5 v-2 M38 7 l1.6-1.6" stroke-width="1"/>
 </svg>
-</span>New binding interface</span><p class="mt-1 max-w-xs text-xs text-slate-600">Creates an interface for a partner the wild-type protein does not bind at all.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: Kd of the new complex</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">with:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">protein</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">self</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">ligand</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">DNA</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">RNA</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">membrane</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-indigo-50 text-indigo-800 ring-indigo-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        New binding interface
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">Creates an interface for a partner the wild-type protein does not bind at all.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: Kd of the new complex
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">with:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">protein</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">self</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">ligand</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">DNA</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">RNA</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">membrane</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-indigo-50 text-indigo-800 ring-indigo-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="22" cy="12" r="5.5"/>
   <path d="M22 6.5 V2 M27.5 12 h5"/>
   <path d="M16.5 12 h-5 M22 17.5 V22" stroke-dasharray="2 2"/>
   <path d="M26 8 l4-4"/>
 </svg>
-</span>Interactome rewiring</span><p class="mt-1 max-w-xs text-xs text-slate-600">The set of partners changes as a whole. A consequence of several binding steps, which carry the quantities; this step carries none.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">no quantity</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">toward:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">gained partners</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">lost partners</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">shifted target set</span></span></td></tr><tr class="align-top border-t-2 border-slate-200"><td rowspan="7" class="border-r border-slate-100 px-3 py-2 align-top"><span class="flex items-center gap-1.5 whitespace-nowrap text-xs font-medium text-slate-700"><span class="inline-block h-2 w-2 shrink-0 rounded-full bg-teal-500"></span>Conformation and regulation</span></td><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-teal-50 text-teal-800 ring-teal-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Interactome rewiring
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">The set of partners changes as a whole. A consequence of several binding steps, which carry the quantities; this step carries none.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        no quantity
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">toward:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">gained partners</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">lost partners</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">shifted target set</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t-2 border-slate-200">
+                  <td rowspan="7" class="border-r border-slate-100 px-3 py-2 align-top">
+                      <span class="flex items-center gap-1.5 whitespace-nowrap text-xs font-medium text-slate-700">
+                        <span class="inline-block h-2 w-2 shrink-0 rounded-full bg-teal-500"></span>
+                        Conformation and regulation
+                      </span>
+                    </td>
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-teal-50 text-teal-800 ring-teal-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <path d="M8 6 h12 a4 4 0 0 1 0 12 h-12 z"/>
   <path d="M26 6 l8-3 M26 18 l8 3" stroke-dasharray="2 2"/>
 </svg>
-</span>Loss of autoinhibition</span><p class="mt-1 max-w-xs text-xs text-slate-600">Frees a functional module from a restraint carried by the protein itself or by a bound regulator.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: conformational biosensor signal (FRET)</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">of:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">intramolecular contact</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">autoinhibitory segment</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">regulatory subunit</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">pseudosubstrate</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-teal-50 text-teal-800 ring-teal-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Loss of autoinhibition
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">Frees a functional module from a restraint carried by the protein itself or by a bound regulator.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: conformational biosensor signal (FRET)
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">of:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">intramolecular contact</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">autoinhibitory segment</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">regulatory subunit</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">pseudosubstrate</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-teal-50 text-teal-800 ring-teal-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="22" cy="12" r="5.5"/>
 </svg>
-</span>Gain of autoinhibition</span><p class="mt-1 max-w-xs text-xs text-slate-600">Locks a functional module under a restraint the wild-type protein does not impose, or tightens one it does.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: conformational biosensor signal (FRET)</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">of:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">intramolecular contact</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">autoinhibitory segment</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">regulatory subunit</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">pseudosubstrate</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-teal-50 text-teal-800 ring-teal-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Gain of autoinhibition
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">Locks a functional module under a restraint the wild-type protein does not impose, or tightens one it does.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: conformational biosensor signal (FRET)
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">of:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">intramolecular contact</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">autoinhibitory segment</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">regulatory subunit</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">pseudosubstrate</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-teal-50 text-teal-800 ring-teal-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <path d="M4 8 h9 v8 h-9 z"/>
   <path d="M17 9.5 h10 l-3-2.5 M27 14.5 h-10 l3 2.5"/>
   <circle cx="36" cy="12" r="5.5"/>
 </svg>
-</span>Conformational equilibrium shift</span><p class="mt-1 max-w-xs text-xs text-slate-600">Shifts the population of conformers toward another state than the wild-type protein favours.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: equilibrium constant; fraction in the active state; ΔG between states</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">toward:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">active state</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">inactive state</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">open state</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">closed state</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">high-affinity state</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">low-affinity state</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-teal-50 text-teal-800 ring-teal-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Conformational equilibrium shift
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">Shifts the population of conformers toward another state than the wild-type protein favours.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: equilibrium constant; fraction in the active state; ΔG between states
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">toward:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">active state</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">inactive state</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">open state</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">closed state</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">high-affinity state</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">low-affinity state</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-teal-50 text-teal-800 ring-teal-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <path d="M4 12 h9" stroke-dasharray="2 2"/>
   <path d="M6.5 9 l4 6 M10.5 9 l-4 6" stroke-width="1.1"/>
   <circle cx="24" cy="12" r="5.5"/>
   <path d="M30 12 h10 l-3-3 M40 12 l-3 3"/>
 </svg>
-</span>Loss of regulatory dependence</span><p class="mt-1 max-w-xs text-xs text-slate-600">The protein performs its activity without the input that normally gates it: it is active when the input is absent.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: activity without the input, as a share of the stimulated maximum; EC50 shift</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">independent of:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">ligand</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">upstream kinase</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">upstream GTPase</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">cofactor</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">nucleotide</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">voltage</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">GEF/GAP</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">membrane recruitment</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">allosteric inhibitor</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">allosteric activator</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">proteolytic activation</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-teal-50 text-teal-800 ring-teal-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Loss of regulatory dependence
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">The protein performs its activity without the input that normally gates it: it is active when the input is absent.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: activity without the input, as a share of the stimulated maximum; EC50 shift
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">independent of:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">ligand</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">upstream kinase</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">upstream GTPase</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">cofactor</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">nucleotide</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">voltage</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">GEF/GAP</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">membrane recruitment</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">allosteric inhibitor</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">allosteric activator</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">proteolytic activation</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-teal-50 text-teal-800 ring-teal-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="22" cy="12" r="5.5"/>
 </svg>
-</span>Gain of regulatory dependence</span><p class="mt-1 max-w-xs text-xs text-slate-600">The protein now requires an input that does not gate the wild-type protein, and is idle whenever that input is absent.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: activity without the input, as a share of the stimulated maximum; EC50 shift</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">dependent on:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">ligand</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">upstream kinase</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">upstream GTPase</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">cofactor</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">nucleotide</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">voltage</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">GEF/GAP</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">membrane recruitment</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">allosteric activator</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">proteolytic activation</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-teal-50 text-teal-800 ring-teal-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Gain of regulatory dependence
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">The protein now requires an input that does not gate the wild-type protein, and is idle whenever that input is absent.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: activity without the input, as a share of the stimulated maximum; EC50 shift
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">dependent on:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">ligand</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">upstream kinase</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">upstream GTPase</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">cofactor</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">nucleotide</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">voltage</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">GEF/GAP</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">membrane recruitment</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">allosteric activator</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">proteolytic activation</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-teal-50 text-teal-800 ring-teal-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="22" cy="12" r="5.5"/>
 </svg>
-</span>Folding destabilization</span><p class="mt-1 max-w-xs text-xs text-slate-600">Lowers the stability of the folded state.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: ΔΔG of unfolding; ΔTm</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">of:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">the whole protein</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">a domain</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">an interface</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">a local element</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-teal-50 text-teal-800 ring-teal-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Folding destabilization
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">Lowers the stability of the folded state.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: ΔΔG of unfolding; ΔTm
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">of:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">the whole protein</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">a domain</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">an interface</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">a local element</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-teal-50 text-teal-800 ring-teal-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="22" cy="12" r="5.5"/>
 </svg>
-</span>Folding stabilization</span><p class="mt-1 max-w-xs text-xs text-slate-600">Raises the stability of the folded state.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: ΔΔG of unfolding; ΔTm</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">of:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">the whole protein</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">a domain</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">an interface</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">a local element</span></span></td></tr><tr class="align-top border-t-2 border-slate-200"><td rowspan="4" class="border-r border-slate-100 px-3 py-2 align-top"><span class="flex items-center gap-1.5 whitespace-nowrap text-xs font-medium text-slate-700"><span class="inline-block h-2 w-2 shrink-0 rounded-full bg-fuchsia-500"></span>Chemistry and assembly</span></td><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-fuchsia-50 text-fuchsia-800 ring-fuchsia-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Folding stabilization
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">Raises the stability of the folded state.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: ΔΔG of unfolding; ΔTm
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">of:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">the whole protein</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">a domain</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">an interface</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">a local element</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t-2 border-slate-200">
+                  <td rowspan="4" class="border-r border-slate-100 px-3 py-2 align-top">
+                      <span class="flex items-center gap-1.5 whitespace-nowrap text-xs font-medium text-slate-700">
+                        <span class="inline-block h-2 w-2 shrink-0 rounded-full bg-fuchsia-500"></span>
+                        Chemistry and assembly
+                      </span>
+                    </td>
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-fuchsia-50 text-fuchsia-800 ring-fuchsia-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="16" cy="12" r="5.5"/>
   <circle cx="30" cy="7" r="3.5"/>
   <path d="M20 9 l6.5 -1.5"/>
   <path d="M28.6 7 h2.8 M30 5.6 v2.8" stroke-width="1"/>
 </svg>
-</span>Gain of PTM site</span><p class="mt-1 max-w-xs text-xs text-slate-600">Creates a residue that becomes a substrate for a modifying enzyme.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: modification stoichiometry or signal</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">of:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">phosphorylation</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">glycosylation</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">ubiquitination</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">acetylation</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">methylation</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">lipidation</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">proteolytic cleavage</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-fuchsia-50 text-fuchsia-800 ring-fuchsia-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Gain of PTM site
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">Creates a residue that becomes a substrate for a modifying enzyme.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: modification stoichiometry or signal
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">of:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">phosphorylation</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">glycosylation</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">ubiquitination</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">acetylation</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">methylation</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">lipidation</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">proteolytic cleavage</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-fuchsia-50 text-fuchsia-800 ring-fuchsia-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="16" cy="12" r="5.5"/>
   <circle cx="30" cy="7" r="3.5" stroke-dasharray="2 2"/>
   <path d="M20 9 l6.5 -1.5" stroke-dasharray="2 2"/>
 </svg>
-</span>Loss of PTM site</span><p class="mt-1 max-w-xs text-xs text-slate-600">Removes a regulatory modification the wild-type sequence carries.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">no quantity</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">of:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">phosphorylation</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">glycosylation</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">ubiquitination</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">acetylation</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">methylation</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">lipidation</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">proteolytic cleavage</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-fuchsia-50 text-fuchsia-800 ring-fuchsia-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Loss of PTM site
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">Removes a regulatory modification the wild-type sequence carries.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        no quantity
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">of:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">phosphorylation</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">glycosylation</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">ubiquitination</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">acetylation</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">methylation</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">lipidation</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">proteolytic cleavage</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-fuchsia-50 text-fuchsia-800 ring-fuchsia-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="9" cy="12" r="4"/>
   <circle cx="18" cy="8" r="4"/>
   <circle cx="19" cy="17" r="4"/>
   <circle cx="28" cy="12" r="4"/>
   <circle cx="37" cy="8" r="4"/>
 </svg>
-</span>Gain of higher-order assembly</span><p class="mt-1 max-w-xs text-xs text-slate-600">The protein forms an assembly of indefinite stoichiometry the wild-type protein does not form, or forms more of it.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: fraction assembled; saturation concentration</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">into:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">condensate</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">amyloid fibril</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">amorphous aggregate</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">filament</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-fuchsia-50 text-fuchsia-800 ring-fuchsia-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Gain of higher-order assembly
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">The protein forms an assembly of indefinite stoichiometry the wild-type protein does not form, or forms more of it.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: fraction assembled; saturation concentration
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">into:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">condensate</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">amyloid fibril</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">amorphous aggregate</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">filament</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-fuchsia-50 text-fuchsia-800 ring-fuchsia-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="22" cy="12" r="5.5"/>
 </svg>
-</span>Loss of higher-order assembly</span><p class="mt-1 max-w-xs text-xs text-slate-600">Prevents an assembly of indefinite stoichiometry the wild-type protein forms.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: fraction assembled; saturation concentration</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">of:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">condensate</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">amyloid fibril</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">amorphous aggregate</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">filament</span></span></td></tr><tr class="align-top border-t-2 border-slate-200"><td rowspan="3" class="border-r border-slate-100 px-3 py-2 align-top"><span class="flex items-center gap-1.5 whitespace-nowrap text-xs font-medium text-slate-700"><span class="inline-block h-2 w-2 shrink-0 rounded-full bg-amber-500"></span>Location and amount</span></td><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-amber-50 text-amber-900 ring-amber-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Loss of higher-order assembly
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">Prevents an assembly of indefinite stoichiometry the wild-type protein forms.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: fraction assembled; saturation concentration
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">of:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">condensate</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">amyloid fibril</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">amorphous aggregate</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">filament</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t-2 border-slate-200">
+                  <td rowspan="3" class="border-r border-slate-100 px-3 py-2 align-top">
+                      <span class="flex items-center gap-1.5 whitespace-nowrap text-xs font-medium text-slate-700">
+                        <span class="inline-block h-2 w-2 shrink-0 rounded-full bg-amber-500"></span>
+                        Location and amount
+                      </span>
+                    </td>
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-amber-50 text-amber-900 ring-amber-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <path d="M3 3 v18" />
   <path d="M41 3 v18" stroke-dasharray="2 2"/>
   <circle cx="14" cy="12" r="5.5"/>
   <path d="M21 12 h9 l-3-3 M30 12 l-3 3"/>
 </svg>
-</span>Change of localization</span><p class="mt-1 max-w-xs text-xs text-slate-600">Changes where the protein resides in the cell.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: nuclear/cytoplasmic ratio; fraction at the membrane</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">by:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">loss of targeting signal</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">gain of targeting signal</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">membrane recruitment</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">release from anchor</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-amber-50 text-amber-900 ring-amber-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Change of localization
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">Changes where the protein resides in the cell.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: nuclear/cytoplasmic ratio; fraction at the membrane
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">by:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">loss of targeting signal</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">gain of targeting signal</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">membrane recruitment</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">release from anchor</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-amber-50 text-amber-900 ring-amber-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="9" cy="12" r="4"/>
   <circle cx="20" cy="12" r="4"/>
   <circle cx="31" cy="12" r="4"/>
   <path d="M38 17 v-9 l-2 2 M38 8 l2 2" stroke-width="1.1"/>
 </svg>
-</span>Increased protein abundance</span><p class="mt-1 max-w-xs text-xs text-slate-600">Raises the steady-state amount of the protein without changing what one molecule does.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: half-life; steady-state protein level</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">by:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">loss of degron</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">increased stability</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">escape from proteolysis</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-amber-50 text-amber-900 ring-amber-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Increased protein abundance
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">Raises the steady-state amount of the protein without changing what one molecule does.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: half-life; steady-state protein level
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">by:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">loss of degron</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">increased stability</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">escape from proteolysis</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-amber-50 text-amber-900 ring-amber-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="22" cy="12" r="5.5"/>
 </svg>
-</span>Decreased protein abundance</span><p class="mt-1 max-w-xs text-xs text-slate-600">Lowers the steady-state amount of the protein without changing what one molecule does.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: half-life; steady-state protein level</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">by:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">gain of degron</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">decreased stability</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">increased proteolysis</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">impaired maturation</span></span></td></tr><tr class="align-top border-t-2 border-slate-200"><td rowspan="7" class="border-r border-slate-100 px-3 py-2 align-top"><span class="flex items-center gap-1.5 whitespace-nowrap text-xs font-medium text-slate-700"><span class="inline-block h-2 w-2 shrink-0 rounded-full bg-rose-500"></span>Activity</span></td><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-rose-50 text-rose-800 ring-rose-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Decreased protein abundance
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">Lowers the steady-state amount of the protein without changing what one molecule does.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: half-life; steady-state protein level
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">by:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">gain of degron</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">decreased stability</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">increased proteolysis</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">impaired maturation</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t-2 border-slate-200">
+                  <td rowspan="7" class="border-r border-slate-100 px-3 py-2 align-top">
+                      <span class="flex items-center gap-1.5 whitespace-nowrap text-xs font-medium text-slate-700">
+                        <span class="inline-block h-2 w-2 shrink-0 rounded-full bg-rose-500"></span>
+                        Activity
+                      </span>
+                    </td>
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-rose-50 text-rose-800 ring-rose-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="12" cy="12" r="5.5"/>
   <path d="M19 12 h8 l-2.5-2.5 M27 12 l-2.5 2.5"/>
   <path d="M19 6.5 h8 M19 17.5 h8" stroke-width="1"/>
   <path d="M34 17 v-10 l-2 2 M34 7 l2 2" stroke-width="1.1"/>
 </svg>
-</span>Increase in intrinsic activity</span><p class="mt-1 max-w-xs text-xs text-slate-600">Each mutant molecule performs more of an activity the wild-type protein already has.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: kcat; kcat/Km; basal activity; open probability</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">of:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">catalytic</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">channel gating</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">transport</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">transcriptional</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">chromatin</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">effector engagement</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">motor</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">scaffolding</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-rose-50 text-rose-800 ring-rose-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Increase in intrinsic activity
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">Each mutant molecule performs more of an activity the wild-type protein already has.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: kcat; kcat/Km; basal activity; open probability
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">of:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">catalytic</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">channel gating</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">transport</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">transcriptional</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">chromatin</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">effector engagement</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">motor</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">scaffolding</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-rose-50 text-rose-800 ring-rose-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="12" cy="12" r="5.5"/>
   <path d="M19 12 h8 l-2.5-2.5 M27 12 l-2.5 2.5" stroke-dasharray="2 2"/>
   <path d="M34 7 v10 l-2-2 M34 17 l2-2" stroke-width="1.1"/>
 </svg>
-</span>Decrease in intrinsic activity</span><p class="mt-1 max-w-xs text-xs text-slate-600">Each mutant molecule performs less of an activity the wild-type protein already has, without abolishing it.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: kcat; kcat/Km; basal activity; open probability</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">of:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">catalytic</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">channel gating</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">transport</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">transcriptional</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">chromatin</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">effector engagement</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">motor</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">scaffolding</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-rose-50 text-rose-800 ring-rose-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Decrease in intrinsic activity
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">Each mutant molecule performs less of an activity the wild-type protein already has, without abolishing it.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: kcat; kcat/Km; basal activity; open probability
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">of:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">catalytic</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">channel gating</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">transport</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">transcriptional</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">chromatin</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">effector engagement</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">motor</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">scaffolding</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-rose-50 text-rose-800 ring-rose-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="22" cy="12" r="5.5"/>
 </svg>
-</span>Loss of an activity</span><p class="mt-1 max-w-xs text-xs text-slate-600">The mutant no longer performs an activity the wild-type protein has: the source reports it absent or at background. Reduced activity is a decrease, not a loss.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: residual activity, as a share of wild-type</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">of:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">catalytic</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">channel gating</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">transport</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">transcriptional</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">chromatin</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">effector engagement</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">motor</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">scaffolding</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-rose-50 text-rose-800 ring-rose-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Loss of an activity
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">The mutant no longer performs an activity the wild-type protein has: the source reports it absent or at background. Reduced activity is a decrease, not a loss.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: residual activity, as a share of wild-type
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">of:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">catalytic</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">channel gating</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">transport</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">transcriptional</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">chromatin</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">effector engagement</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">motor</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">scaffolding</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-rose-50 text-rose-800 ring-rose-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="13" cy="12" r="5.5"/>
   <path d="M20 12 h9 l-3-3 M29 12 l-3 3"/>
   <path d="M36 5 l1.6 3.4 3.4 .6 -2.5 2.4 .6 3.6 -3.1-1.8 -3.1 1.8 .6-3.6 -2.5-2.4 3.4-.6 z"/>
 </svg>
-</span>Gain of a new activity</span><p class="mt-1 max-w-xs text-xs text-slate-600">The mutant performs an activity the wild-type protein does not have.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: rate of the new activity</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">as:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">new catalytic product</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">new substrate</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">new pathway coupling</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">new interaction-mediated function</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-rose-50 text-rose-800 ring-rose-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Gain of a new activity
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">The mutant performs an activity the wild-type protein does not have.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: rate of the new activity
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">as:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">new catalytic product</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">new substrate</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">new pathway coupling</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">new interaction-mediated function</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-rose-50 text-rose-800 ring-rose-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <path d="M3 12 h8" stroke-dasharray="2 2"/>
   <circle cx="18" cy="12" r="5"/>
   <path d="M24 12 h9 l-3-3 M33 12 l-3 3"/>
   <circle cx="40" cy="12" r="3.5"/>
 </svg>
-</span>Gain of response to a non-cognate signal</span><p class="mt-1 max-w-xs text-xs text-slate-600">The protein is driven through its ordinary downstream pathway by an input the wild-type protein does not respond to.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: EC50 of the new input; fold activation</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">to:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">non-cognate ligand</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">antagonist</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">new activating partner</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-rose-50 text-rose-800 ring-rose-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Gain of response to a non-cognate signal
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">The protein is driven through its ordinary downstream pathway by an input the wild-type protein does not respond to.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: EC50 of the new input; fold activation
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">to:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">non-cognate ligand</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">antagonist</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">new activating partner</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-rose-50 text-rose-800 ring-rose-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="22" cy="12" r="5.5"/>
 </svg>
-</span>Loss of response to a cognate signal</span><p class="mt-1 max-w-xs text-xs text-slate-600">The protein is no longer driven by an input the wild-type protein responds to: it stays idle when the input is present.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: EC50 shift; loss of stimulation</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">to:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">cognate ligand</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">agonist</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">upstream activating partner</span></span></td></tr><tr class="align-top border-t border-slate-100"><td rowspan="1" class="px-3 py-2"><span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-rose-50 text-rose-800 ring-rose-200"><span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+                        Loss of response to a cognate signal
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">The protein is no longer driven by an input the wild-type protein responds to: it stays idle when the input is present.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: EC50 shift; loss of stimulation
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">to:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">cognate ligand</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">agonist</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">upstream activating partner</span>
+                    </span>
+                  </td>
+                </tr><tr class="align-top border-t border-slate-100">
+                  
+
+                  <td rowspan="1" class="px-3 py-2">
+                      <span class="inline-flex items-center gap-1.5 rounded px-2 py-1 text-xs ring-1 ring-inset bg-rose-50 text-rose-800 ring-rose-200">
+                        <span class="shrink-0 opacity-70 [&amp;&gt;svg]:h-4 [&amp;&gt;svg]:w-7"><svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <circle cx="11" cy="12" r="5.5"/>
   <circle cx="33" cy="12" r="5.5"/>
   <path d="M18 12 h8"/>
   <path d="M20 7 l6 10 M26 7 l-6 10" stroke-width="1.2"/>
 </svg>
-</span>Interference with the wild-type protein</span><p class="mt-1 max-w-xs text-xs text-slate-600">The mutant lowers the activity of the wild-type protein it coexists with — the antimorphic effect.</p><p class="mt-1 max-w-xs text-[11px] text-violet-800">quantity: inhibition of the wild-type protein at a stated mutant:wild-type ratio</p></td><td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">by:</td><td class="px-3 py-2"><span class="flex flex-wrap gap-1"><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">sequestration of a shared partner</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">poisoning of a hybrid complex</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">substrate trapping</span></span></td></tr></tbody></table></div><details class="mt-4 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2"><summary class="cursor-pointer text-xs font-medium text-slate-600">As the annotators are shown it</summary><pre class="mt-2 overflow-x-auto text-[11px] leading-relaxed text-slate-600">### Interactions
+</span>
+                        Interference with the wild-type protein
+                      </span>
+                      <p class="mt-1 max-w-xs text-xs text-slate-600">The mutant lowers the activity of the wild-type protein it coexists with — the antimorphic effect.</p>
+                      <p class="mt-1 max-w-xs text-[11px] text-violet-800">
+                        quantity: inhibition of the wild-type protein at a stated mutant:wild-type ratio
+                      </p>
+                    </td>
+
+                  <td class="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">by:</td>
+                  <td class="px-3 py-2">
+                    <span class="flex flex-wrap gap-1">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">sequestration of a shared partner</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">poisoning of a hybrid complex</span><span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">substrate trapping</span>
+                    </span>
+                  </td>
+                </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <details class="mt-4 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2">
+    <summary class="cursor-pointer text-xs font-medium text-slate-600">As the annotators are shown it</summary>
+    <pre class="mt-2 overflow-x-auto text-[11px] leading-relaxed text-slate-600">### Interactions
 
 - **Increase binding affinity** — Strengthens an interaction the wild-type protein already makes.
   - `with:` `protein`, `self`, `ligand`, `nucleotide`, `substrate`, `DNA`, `RNA`, `membrane`, `metal ion`
@@ -308,4 +994,50 @@ measures the coverage of this vocabulary.</p><div class="not-prose my-8"><h2 cla
   - quantity, when reported: EC50 shift; loss of stimulation
 - **Interference with the wild-type protein** — The mutant lowers the activity of the wild-type protein it coexists with — the antimorphic effect.
   - `by:` `sequestration of a shared partner`, `poisoning of a hybrid complex`, `substrate trapping`
-  - quantity, when reported: inhibition of the wild-type protein at a stated mutant:wild-type ratio</pre></details></div></article></div></main></div><dialog id="demo-notice" aria-labelledby="demo-notice-title" class="m-auto w-[calc(100%-2rem)] max-w-lg rounded-lg border border-slate-200 bg-white p-6 text-slate-800 shadow-xl backdrop:bg-slate-900/40"><h2 id="demo-notice-title" class="mb-3 text-lg font-semibold">This is a demo of OncoMechanome</h2><div class="space-y-3 text-sm text-slate-600"><p>OncoMechanome annotates cancer variants with the chain of molecular mechanisms that links the amino-acid change to the change in protein activity. Each chain is built step by step by a panel of LLM annotators, every step backed by a cited source, then consolidated by an arbiter.</p><p>This demo shows a sample of annotated variants. The full version, covering the complete set of gain-of-function variants, will be available soon.</p><p>Questions or feedback: <a class="text-sky-700 underline" href="mailto:benoit.de.witte@ulb.be">benoit.de.witte@ulb.be</a></p></div><form method="dialog" class="mt-5 flex justify-end"><button type="submit" class="rounded bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-700">Explore the demo</button></form></dialog><script type="module">var e=`oncomechanome:demo-notice-seen`,t=document.getElementById(`demo-notice`),n=!1;try{n=localStorage.getItem(e)===`1`}catch{}t&&!n&&(t.addEventListener(`close`,()=>{try{localStorage.setItem(e,`1`)}catch{}}),t.showModal());</script></body></html>
+  - quantity, when reported: inhibition of the wild-type protein at a stated mutant:wild-type ratio</pre>
+  </details>
+</div>
+    </article>
+  </div>
+
+        </div>
+        <footer class="mt-12 border-t border-slate-200 pt-4 text-xs text-slate-500">
+  <div class="flex flex-col gap-1 sm:flex-row sm:flex-wrap sm:items-baseline sm:gap-x-4">
+    <span>
+      Benoît de Witte ·
+      <a class="text-sky-700 underline" href="mailto:benoit.de.witte@ulb.be">benoit.de.witte@ulb.be</a>
+    </span>
+    <span>3BIO &amp; IRIBHM, Université libre de Bruxelles</span>
+    <span>Funded by F.R.S.-FNRS Télévie</span>
+  </div>
+</footer>
+      </main>
+    </div>
+    <dialog id="demo-notice" aria-labelledby="demo-notice-title" class="m-auto w-[calc(100%-2rem)] max-w-lg rounded-lg border border-slate-200 bg-white p-6 text-slate-800 shadow-xl backdrop:bg-slate-900/40">
+  <h2 id="demo-notice-title" class="mb-3 text-lg font-semibold">This is a demo of OncoMechanome</h2>
+  <div class="space-y-3 text-sm text-slate-600">
+    <p>
+      OncoMechanome annotates cancer variants with the chain of molecular mechanisms that links the
+      amino-acid change to the change in protein activity. Each chain is built step by step by a
+      panel of LLM annotators, every step backed by a cited source, then consolidated by an arbiter.
+    </p>
+    <p>
+      This demo shows a sample of annotated variants. The full version, covering the complete set
+      of gain-of-function variants, will be available soon.
+    </p>
+    <p>
+      Questions or feedback: 
+      <a class="text-sky-700 underline" href="mailto:benoit.de.witte@ulb.be">benoit.de.witte@ulb.be</a>
+    </p>
+  </div>
+  <form method="dialog" class="mt-5 flex justify-end">
+    <button type="submit" class="rounded bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-700">
+      Explore the demo
+    </button>
+  </form>
+</dialog>
+
+<script type="module">var e=`oncomechanome:demo-notice-seen`,t=document.getElementById(`demo-notice`),n=!1;try{n=localStorage.getItem(e)===`1`}catch{}t&&!n&&(t.addEventListener(`close`,()=>{try{localStorage.setItem(e,`1`)}catch{}}),t.showModal());</script>
+
+    <script type="module">var e=document.documentElement,t=document.getElementById(`nav-open`),n=window.matchMedia(`(min-width: 1024px)`);function r(e){try{localStorage.setItem(`oncomechanome:nav-collapsed`,e?`1`:`0`)}catch{}}function i(){n.matches?(delete e.dataset.navCollapsed,r(!1)):(e.dataset.navOpen=``,t.setAttribute(`aria-expanded`,`true`))}function a(){n.matches?(e.dataset.navCollapsed=``,r(!0)):(delete e.dataset.navOpen,t.setAttribute(`aria-expanded`,`false`))}t.addEventListener(`click`,i),document.getElementById(`nav-close`).addEventListener(`click`,a),document.getElementById(`nav-backdrop`).addEventListener(`click`,a),document.addEventListener(`keydown`,t=>{t.key===`Escape`&&`navOpen`in e.dataset&&a()}),n.addEventListener(`change`,()=>{delete e.dataset.navOpen,t.setAttribute(`aria-expanded`,`false`)});</script></body>
+</html>

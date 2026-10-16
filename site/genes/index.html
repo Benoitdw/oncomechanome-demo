@@ -1,4 +1,576 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="icon" href="/favicon_bg.png"><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v7.1.4"><title>Genes · OncoMechanome</title><link rel="stylesheet" href="/_astro/Layout.DN4zeY1D.css"></head><body class="min-h-screen bg-slate-50 text-slate-900"><div class="flex min-h-screen"><aside class="w-56 shrink-0 border-r border-slate-200 bg-white p-4"><a href="/" class="mb-6 flex items-center gap-2 text-lg font-semibold tracking-tight"><img src="/favicon_black.svg" alt="" class="h-10 w-10 rounded object-cover">OncoMechanome</a><div class="mb-4"><style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="Z17oRKj" component-url="/_astro/SiteSearch.C_tLKfMY.js" component-export="default" renderer-url="/_astro/client.svelte.ftY2z8or.js" props="{&quot;base&quot;:[0,&quot;/&quot;]}" ssr client="idle" opts="{&quot;name&quot;:&quot;SiteSearch&quot;,&quot;value&quot;:true}" await-children><!--[--><div class="relative"><input value="" type="search" placeholder="BRAF V600E…   Ctrl K" aria-label="Search a gene or variant" class="w-full rounded border border-slate-300 px-2 py-1.5 text-sm"/> <!--[-1--><!--]--></div><!--]--><!--astro:end--></astro-island></div><nav class="flex flex-col gap-1"><a href="/" class="rounded px-2 py-1.5 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900">Coverage</a><a href="/genes" class="rounded px-2 py-1.5 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900">Genes</a><a href="/stats" class="rounded px-2 py-1.5 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900">Stats</a><a href="/docs" class="rounded px-2 py-1.5 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900">Docs</a></nav></aside><main class="min-w-0 flex-1 p-8"><h1 class="mb-6 text-2xl font-semibold">Genes</h1><input id="gene-filter" type="text" placeholder="Filter genes…" class="mb-4 w-full max-w-xs rounded border border-slate-300 px-3 py-1.5 text-sm"><table class="w-full border-collapse text-sm"><thead><tr class="border-b border-slate-200 text-left text-slate-500"><th class="py-2 pr-4">Gene</th><th class="py-2 pr-4">Variants</th><th class="py-2 pr-4">Annotated</th><th class="py-2 pr-4" title="agreement — label Jaccard ≥ 0.6"><span class="mr-1 inline-block h-2 w-2 rounded-full" style="background:#2f7d4f"></span>agreement</th><th class="py-2 pr-4" title="partial agreement"><span class="mr-1 inline-block h-2 w-2 rounded-full" style="background:#b45309"></span>partial</th><th class="py-2 pr-4" title="split panel — label Jaccard < 0.2"><span class="mr-1 inline-block h-2 w-2 rounded-full" style="background:#b3261e"></span>split</th><th class="py-2 pr-4" title="one usable answer — nothing to compare"><span class="mr-1 inline-block h-2 w-2 rounded-full" style="background:#64748b"></span>single answer</th></tr></thead><tbody id="gene-rows"><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="abcc8"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/ABCC8">ABCC8</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="abl1"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/ABL1">ABL1</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="alk"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/ALK">ALK</a></td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="ar"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/AR">AR</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="bcl2"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/BCL2">BCL2</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="braf"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/BRAF">BRAF</a></td><td class="py-1.5 pr-4">10</td><td class="py-1.5 pr-4">10</td><td class="py-1.5 pr-4 text-slate-600">3</td><td class="py-1.5 pr-4 text-slate-600">6</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="cacna1c"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/CACNA1C">CACNA1C</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="card11"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/CARD11">CARD11</a></td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="cd79b"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/CD79B">CD79B</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="ctnnb1"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/CTNNB1">CTNNB1</a></td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="dnmt3a"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/DNMT3A">DNMT3A</a></td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="egfr"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/EGFR">EGFR</a></td><td class="py-1.5 pr-4">7</td><td class="py-1.5 pr-4">7</td><td class="py-1.5 pr-4 text-slate-600">3</td><td class="py-1.5 pr-4 text-slate-600">4</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="erbb2"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/ERBB2">ERBB2</a></td><td class="py-1.5 pr-4">7</td><td class="py-1.5 pr-4">7</td><td class="py-1.5 pr-4 text-slate-600">4</td><td class="py-1.5 pr-4 text-slate-600">3</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="erbb3"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/ERBB3">ERBB3</a></td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="fgfr1"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/FGFR1">FGFR1</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="fgfr2"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/FGFR2">FGFR2</a></td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="fgfr3"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/FGFR3">FGFR3</a></td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="flt3"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/FLT3">FLT3</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="foxa1"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/FOXA1">FOXA1</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="fxyd2"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/FXYD2">FXYD2</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="hcn4"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/HCN4">HCN4</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="hras"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/HRAS">HRAS</a></td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="ifngr2"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/IFNGR2">IFNGR2</a></td><td class="py-1.5 pr-4">5</td><td class="py-1.5 pr-4">5</td><td class="py-1.5 pr-4 text-slate-600">5</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="jak2"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/JAK2">JAK2</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="kcnk17"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/KCNK17">KCNK17</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="kit"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/KIT">KIT</a></td><td class="py-1.5 pr-4">7</td><td class="py-1.5 pr-4">7</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">6</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="kras"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/KRAS">KRAS</a></td><td class="py-1.5 pr-4">3</td><td class="py-1.5 pr-4">3</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">3</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="map2k1"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/MAP2K1">MAP2K1</a></td><td class="py-1.5 pr-4">5</td><td class="py-1.5 pr-4">5</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">3</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="met"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/MET">MET</a></td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="morc2"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/MORC2">MORC2</a></td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="mtor"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/MTOR">MTOR</a></td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="notch1"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/NOTCH1">NOTCH1</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="nr3c2"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/NR3C2">NR3C2</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="nras"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/NRAS">NRAS</a></td><td class="py-1.5 pr-4">5</td><td class="py-1.5 pr-4">5</td><td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="pax8"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/PAX8">PAX8</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="pdgfra"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/PDGFRA">PDGFRA</a></td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="pdgfrb"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/PDGFRB">PDGFRB</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="pik3ca"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/PIK3CA">PIK3CA</a></td><td class="py-1.5 pr-4">7</td><td class="py-1.5 pr-4">7</td><td class="py-1.5 pr-4 text-slate-600">3</td><td class="py-1.5 pr-4 text-slate-600">4</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="pik3cb"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/PIK3CB">PIK3CB</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="plcg1"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/PLCG1">PLCG1</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="pnpo"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/PNPO">PNPO</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="prex2"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/PREX2">PREX2</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="ptpn11"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/PTPN11">PTPN11</a></td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="rac1"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/RAC1">RAC1</a></td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="rac2"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/RAC2">RAC2</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="raf1"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/RAF1">RAF1</a></td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="ret"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/RET">RET</a></td><td class="py-1.5 pr-4">4</td><td class="py-1.5 pr-4">4</td><td class="py-1.5 pr-4 text-slate-600">3</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="rlbp1"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/RLBP1">RLBP1</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="ros1"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/ROS1">ROS1</a></td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="rras2"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/RRAS2">RRAS2</a></td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4">2</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="ryr1"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/RYR1">RYR1</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="ryr2"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/RYR2">RYR2</a></td><td class="py-1.5 pr-4">5</td><td class="py-1.5 pr-4">5</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">4</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="sf3b1"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/SF3B1">SF3B1</a></td><td class="py-1.5 pr-4">3</td><td class="py-1.5 pr-4">3</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">3</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="smo"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/SMO">SMO</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="snca"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/SNCA">SNCA</a></td><td class="py-1.5 pr-4">4</td><td class="py-1.5 pr-4">4</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">3</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="sos1"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/SOS1">SOS1</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="sptlc1"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/SPTLC1">SPTLC1</a></td><td class="py-1.5 pr-4">3</td><td class="py-1.5 pr-4">3</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="stat3"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/STAT3">STAT3</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="tp53"><td class="py-1.5 pr-4"><a class="font-medium text-slate-900 underline" href="/genes/TP53">TP53</a></td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td></tr></tbody></table><details class="mt-8 rounded-lg border border-slate-200 bg-white p-4"><summary class="cursor-pointer text-sm font-semibold text-slate-800">Label glyphs</summary><div class="mt-4"><script>(()=>{var a=(s,i,o)=>{let r=async()=>{await(await s())()},t=typeof i.value=="object"?i.value:void 0,c={rootMargin:t==null?void 0:t.rootMargin},n=new IntersectionObserver(e=>{for(let l of e)if(l.isIntersecting){n.disconnect(),r();break}},c);for(let e of o.children)n.observe(e)};(self.Astro||(self.Astro={})).visible=a;window.dispatchEvent(new Event("astro:visible"));})();</script><astro-island uid="Z10rMEC" component-url="/_astro/GlyphLegend.B9WJxEYJ.js" component-export="default" renderer-url="/_astro/client.svelte.ftY2z8or.js" props="{&quot;vocabulary&quot;:[1,[[0,{&quot;label&quot;:[0,&quot;Altered binding specificity&quot;],&quot;group&quot;:[0,&quot;Interactions&quot;]}],[0,{&quot;label&quot;:[0,&quot;Change of localization&quot;],&quot;group&quot;:[0,&quot;Location and amount&quot;]}],[0,{&quot;label&quot;:[0,&quot;Conformational equilibrium shift&quot;],&quot;group&quot;:[0,&quot;Conformation and regulation&quot;]}],[0,{&quot;label&quot;:[0,&quot;Decrease binding affinity&quot;],&quot;group&quot;:[0,&quot;Interactions&quot;]}],[0,{&quot;label&quot;:[0,&quot;Decrease in intrinsic activity&quot;],&quot;group&quot;:[0,&quot;Activity&quot;]}],[0,{&quot;label&quot;:[0,&quot;Decreased protein abundance&quot;],&quot;group&quot;:[0,&quot;Location and amount&quot;]}],[0,{&quot;label&quot;:[0,&quot;Folding destabilization&quot;],&quot;group&quot;:[0,&quot;Conformation and regulation&quot;]}],[0,{&quot;label&quot;:[0,&quot;Folding stabilization&quot;],&quot;group&quot;:[0,&quot;Conformation and regulation&quot;]}],[0,{&quot;label&quot;:[0,&quot;Gain of PTM site&quot;],&quot;group&quot;:[0,&quot;Chemistry and assembly&quot;]}],[0,{&quot;label&quot;:[0,&quot;Gain of a new activity&quot;],&quot;group&quot;:[0,&quot;Activity&quot;]}],[0,{&quot;label&quot;:[0,&quot;Gain of autoinhibition&quot;],&quot;group&quot;:[0,&quot;Conformation and regulation&quot;]}],[0,{&quot;label&quot;:[0,&quot;Gain of higher-order assembly&quot;],&quot;group&quot;:[0,&quot;Chemistry and assembly&quot;]}],[0,{&quot;label&quot;:[0,&quot;Gain of regulatory dependence&quot;],&quot;group&quot;:[0,&quot;Conformation and regulation&quot;]}],[0,{&quot;label&quot;:[0,&quot;Gain of response to a non-cognate signal&quot;],&quot;group&quot;:[0,&quot;Activity&quot;]}],[0,{&quot;label&quot;:[0,&quot;Increase binding affinity&quot;],&quot;group&quot;:[0,&quot;Interactions&quot;]}],[0,{&quot;label&quot;:[0,&quot;Increase in intrinsic activity&quot;],&quot;group&quot;:[0,&quot;Activity&quot;]}],[0,{&quot;label&quot;:[0,&quot;Increased protein abundance&quot;],&quot;group&quot;:[0,&quot;Location and amount&quot;]}],[0,{&quot;label&quot;:[0,&quot;Interactome rewiring&quot;],&quot;group&quot;:[0,&quot;Interactions&quot;]}],[0,{&quot;label&quot;:[0,&quot;Interference with the wild-type protein&quot;],&quot;group&quot;:[0,&quot;Activity&quot;]}],[0,{&quot;label&quot;:[0,&quot;Loss of PTM site&quot;],&quot;group&quot;:[0,&quot;Chemistry and assembly&quot;]}],[0,{&quot;label&quot;:[0,&quot;Loss of an activity&quot;],&quot;group&quot;:[0,&quot;Activity&quot;]}],[0,{&quot;label&quot;:[0,&quot;Loss of autoinhibition&quot;],&quot;group&quot;:[0,&quot;Conformation and regulation&quot;]}],[0,{&quot;label&quot;:[0,&quot;Loss of binding affinity&quot;],&quot;group&quot;:[0,&quot;Interactions&quot;]}],[0,{&quot;label&quot;:[0,&quot;Loss of higher-order assembly&quot;],&quot;group&quot;:[0,&quot;Chemistry and assembly&quot;]}],[0,{&quot;label&quot;:[0,&quot;Loss of regulatory dependence&quot;],&quot;group&quot;:[0,&quot;Conformation and regulation&quot;]}],[0,{&quot;label&quot;:[0,&quot;Loss of response to a cognate signal&quot;],&quot;group&quot;:[0,&quot;Activity&quot;]}],[0,{&quot;label&quot;:[0,&quot;New binding interface&quot;],&quot;group&quot;:[0,&quot;Interactions&quot;]}]]]}" ssr client="visible" opts="{&quot;name&quot;:&quot;GlyphLegend&quot;,&quot;value&quot;:true}" await-children><!--[--><div><p class="mb-3 max-w-3xl text-sm text-slate-600">One schematic per label, drawn once by hand and composed by the annotation. A per-variant
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/favicon_bg.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Astro v7.1.4">
+    <title>Genes · OncoMechanome</title>
+    <!-- Before first paint, so a desktop reader who folded the menu away does not see it flash open
+         on every page. Only the desktop choice is remembered; on a phone the menu always starts
+         closed. -->
+    <script>
+      try {
+        if (localStorage.getItem("oncomechanome:nav-collapsed") === "1") {
+          document.documentElement.dataset.navCollapsed = "";
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Layout.BHCTSAYH.css"></head>
+  <body class="min-h-screen bg-slate-50 text-slate-900">
+    <!-- The top bar: always on a phone, where the menu is a drawer behind it; on a desktop only once
+         the sidebar has been folded away, to bring it back. -->
+    <header id="topbar" class="sticky top-0 z-30 flex h-14 items-center gap-3 border-b border-slate-200 bg-white px-4">
+      <button type="button" id="nav-open" aria-controls="sidebar" aria-expanded="false" aria-label="Open the menu" class="-ml-2 rounded p-2 text-slate-700 hover:bg-slate-100">
+        <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <a href="/" class="flex items-center gap-2 font-semibold tracking-tight">
+        <img src="/favicon_black.svg" alt="" class="h-8 w-8 rounded object-cover">
+        OncoMechanome
+      </a>
+    </header>
+
+    <div id="nav-backdrop" class="fixed inset-0 z-40 bg-slate-900/40"></div>
+
+    <div class="flex min-h-screen">
+      <aside id="sidebar" class="fixed inset-y-0 left-0 z-50 flex w-64 flex-col overflow-y-auto border-r border-slate-200 bg-white p-4 transition-transform duration-200">
+        <div class="mb-6 flex items-center justify-between gap-2">
+          <a href="/" class="flex min-w-0 items-center gap-2 font-semibold tracking-tight">
+            <img src="/favicon_black.svg" alt="" class="h-9 w-9 shrink-0 rounded object-cover">
+            OncoMechanome
+          </a>
+          <button type="button" id="nav-close" aria-controls="sidebar" aria-label="Hide the menu" title="Hide the menu" class="shrink-0 rounded p-1.5 text-slate-400 hover:bg-slate-100 hover:text-slate-700">
+            <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M15 18l-6-6 6-6"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="mb-4">
+          <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="Z17oRKj" component-url="/_astro/SiteSearch.C_tLKfMY.js" component-export="default" renderer-url="/_astro/client.svelte.ftY2z8or.js" props="{&quot;base&quot;:[0,&quot;/&quot;]}" ssr client="idle" opts="{&quot;name&quot;:&quot;SiteSearch&quot;,&quot;value&quot;:true}" await-children><!--[--><div class="relative"><input value="" type="search" placeholder="BRAF V600E…   Ctrl K" aria-label="Search a gene or variant" class="w-full rounded border border-slate-300 px-2 py-1.5 text-sm"/> <!--[-1--><!--]--></div><!--]--><!--astro:end--></astro-island>
+        </div>
+        <nav class="flex flex-col gap-1">
+          <a href="/" class="rounded px-2 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900">
+                Coverage
+              </a><a href="/genes" class="rounded px-2 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900">
+                Genes
+              </a><a href="/stats" class="rounded px-2 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900">
+                Stats
+              </a><a href="/docs" class="rounded px-2 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900">
+                Docs
+              </a>
+        </nav>
+        
+      </aside>
+      <main class="flex min-w-0 flex-1 flex-col p-4 sm:p-6 lg:p-8">
+        <h1 class="mb-4 text-xl font-semibold sm:mb-6 sm:text-2xl">Genes</h1>
+        <div class="flex-1">
+          
+  <input id="gene-filter" type="text" placeholder="Filter genes…" class="mb-4 w-full max-w-xs rounded border border-slate-300 px-3 py-1.5 text-sm">
+
+  <table class="w-full border-collapse text-sm">
+    <thead>
+      <tr class="border-b border-slate-200 text-left text-slate-500">
+        
+        <th class="py-2 pr-4">Gene</th>
+        <th class="py-2 pr-4">Variants</th>
+        <th class="py-2 pr-4">Annotated</th>
+        <th class="py-2 pr-4" title="agreement — label Jaccard ≥ 0.6">
+            <span class="mr-1 inline-block h-2 w-2 rounded-full" style="background:#2f7d4f"></span>
+            agreement
+          </th><th class="py-2 pr-4" title="partial agreement">
+            <span class="mr-1 inline-block h-2 w-2 rounded-full" style="background:#b45309"></span>
+            partial
+          </th><th class="py-2 pr-4" title="split panel — label Jaccard < 0.2">
+            <span class="mr-1 inline-block h-2 w-2 rounded-full" style="background:#b3261e"></span>
+            split
+          </th><th class="py-2 pr-4" title="one usable answer — nothing to compare">
+            <span class="mr-1 inline-block h-2 w-2 rounded-full" style="background:#64748b"></span>
+            single answer
+          </th>
+      </tr>
+    </thead>
+    <tbody id="gene-rows">
+      <tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="abcc8">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/ABCC8">ABCC8</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="abl1">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/ABL1">ABL1</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="alk">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/ALK">ALK</a>
+            </td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="ar">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/AR">AR</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="bcl2">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/BCL2">BCL2</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="braf">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/BRAF">BRAF</a>
+            </td>
+            <td class="py-1.5 pr-4">10</td>
+            <td class="py-1.5 pr-4">10</td>
+            <td class="py-1.5 pr-4 text-slate-600">3</td><td class="py-1.5 pr-4 text-slate-600">6</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="cacna1c">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/CACNA1C">CACNA1C</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="card11">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/CARD11">CARD11</a>
+            </td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="cd79b">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/CD79B">CD79B</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="ctnnb1">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/CTNNB1">CTNNB1</a>
+            </td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="dnmt3a">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/DNMT3A">DNMT3A</a>
+            </td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="egfr">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/EGFR">EGFR</a>
+            </td>
+            <td class="py-1.5 pr-4">7</td>
+            <td class="py-1.5 pr-4">7</td>
+            <td class="py-1.5 pr-4 text-slate-600">3</td><td class="py-1.5 pr-4 text-slate-600">4</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="erbb2">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/ERBB2">ERBB2</a>
+            </td>
+            <td class="py-1.5 pr-4">7</td>
+            <td class="py-1.5 pr-4">7</td>
+            <td class="py-1.5 pr-4 text-slate-600">4</td><td class="py-1.5 pr-4 text-slate-600">3</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="erbb3">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/ERBB3">ERBB3</a>
+            </td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="fgfr1">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/FGFR1">FGFR1</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="fgfr2">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/FGFR2">FGFR2</a>
+            </td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="fgfr3">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/FGFR3">FGFR3</a>
+            </td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="flt3">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/FLT3">FLT3</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="foxa1">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/FOXA1">FOXA1</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="fxyd2">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/FXYD2">FXYD2</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="hcn4">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/HCN4">HCN4</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="hras">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/HRAS">HRAS</a>
+            </td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="ifngr2">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/IFNGR2">IFNGR2</a>
+            </td>
+            <td class="py-1.5 pr-4">5</td>
+            <td class="py-1.5 pr-4">5</td>
+            <td class="py-1.5 pr-4 text-slate-600">5</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="jak2">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/JAK2">JAK2</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="kcnk17">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/KCNK17">KCNK17</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="kit">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/KIT">KIT</a>
+            </td>
+            <td class="py-1.5 pr-4">7</td>
+            <td class="py-1.5 pr-4">7</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">6</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="kras">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/KRAS">KRAS</a>
+            </td>
+            <td class="py-1.5 pr-4">3</td>
+            <td class="py-1.5 pr-4">3</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">3</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="map2k1">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/MAP2K1">MAP2K1</a>
+            </td>
+            <td class="py-1.5 pr-4">5</td>
+            <td class="py-1.5 pr-4">5</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">3</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="met">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/MET">MET</a>
+            </td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="morc2">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/MORC2">MORC2</a>
+            </td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="mtor">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/MTOR">MTOR</a>
+            </td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="notch1">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/NOTCH1">NOTCH1</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="nr3c2">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/NR3C2">NR3C2</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="nras">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/NRAS">NRAS</a>
+            </td>
+            <td class="py-1.5 pr-4">5</td>
+            <td class="py-1.5 pr-4">5</td>
+            <td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="pax8">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/PAX8">PAX8</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="pdgfra">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/PDGFRA">PDGFRA</a>
+            </td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="pdgfrb">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/PDGFRB">PDGFRB</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="pik3ca">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/PIK3CA">PIK3CA</a>
+            </td>
+            <td class="py-1.5 pr-4">7</td>
+            <td class="py-1.5 pr-4">7</td>
+            <td class="py-1.5 pr-4 text-slate-600">3</td><td class="py-1.5 pr-4 text-slate-600">4</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="pik3cb">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/PIK3CB">PIK3CB</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="plcg1">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/PLCG1">PLCG1</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="pnpo">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/PNPO">PNPO</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="prex2">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/PREX2">PREX2</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="ptpn11">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/PTPN11">PTPN11</a>
+            </td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="rac1">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/RAC1">RAC1</a>
+            </td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="rac2">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/RAC2">RAC2</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="raf1">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/RAF1">RAF1</a>
+            </td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="ret">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/RET">RET</a>
+            </td>
+            <td class="py-1.5 pr-4">4</td>
+            <td class="py-1.5 pr-4">4</td>
+            <td class="py-1.5 pr-4 text-slate-600">3</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="rlbp1">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/RLBP1">RLBP1</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="ros1">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/ROS1">ROS1</a>
+            </td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="rras2">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/RRAS2">RRAS2</a>
+            </td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4">2</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="ryr1">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/RYR1">RYR1</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="ryr2">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/RYR2">RYR2</a>
+            </td>
+            <td class="py-1.5 pr-4">5</td>
+            <td class="py-1.5 pr-4">5</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">4</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="sf3b1">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/SF3B1">SF3B1</a>
+            </td>
+            <td class="py-1.5 pr-4">3</td>
+            <td class="py-1.5 pr-4">3</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">3</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="smo">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/SMO">SMO</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="snca">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/SNCA">SNCA</a>
+            </td>
+            <td class="py-1.5 pr-4">4</td>
+            <td class="py-1.5 pr-4">4</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">3</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="sos1">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/SOS1">SOS1</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="sptlc1">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/SPTLC1">SPTLC1</a>
+            </td>
+            <td class="py-1.5 pr-4">3</td>
+            <td class="py-1.5 pr-4">3</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600">2</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="stat3">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/STAT3">STAT3</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr><tr class="gene-row border-b border-slate-100 hover:bg-slate-50" data-gene="tp53">
+            
+            <td class="py-1.5 pr-4">
+              <a class="font-medium text-slate-900 underline" href="/genes/TP53">TP53</a>
+            </td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4">1</td>
+            <td class="py-1.5 pr-4 text-slate-600">1</td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td><td class="py-1.5 pr-4 text-slate-600"></td>
+          </tr>
+    </tbody>
+  </table>
+
+  <details class="mt-8 rounded-lg border border-slate-200 bg-white p-4">
+    <summary class="cursor-pointer text-sm font-semibold text-slate-800">Label glyphs</summary>
+    <div class="mt-4">
+      <script>(()=>{var a=(s,i,o)=>{let r=async()=>{await(await s())()},t=typeof i.value=="object"?i.value:void 0,c={rootMargin:t==null?void 0:t.rootMargin},n=new IntersectionObserver(e=>{for(let l of e)if(l.isIntersecting){n.disconnect(),r();break}},c);for(let e of o.children)n.observe(e)};(self.Astro||(self.Astro={})).visible=a;window.dispatchEvent(new Event("astro:visible"));})();</script><astro-island uid="Z10rMEC" component-url="/_astro/GlyphLegend.B9WJxEYJ.js" component-export="default" renderer-url="/_astro/client.svelte.ftY2z8or.js" props="{&quot;vocabulary&quot;:[1,[[0,{&quot;label&quot;:[0,&quot;Altered binding specificity&quot;],&quot;group&quot;:[0,&quot;Interactions&quot;]}],[0,{&quot;label&quot;:[0,&quot;Change of localization&quot;],&quot;group&quot;:[0,&quot;Location and amount&quot;]}],[0,{&quot;label&quot;:[0,&quot;Conformational equilibrium shift&quot;],&quot;group&quot;:[0,&quot;Conformation and regulation&quot;]}],[0,{&quot;label&quot;:[0,&quot;Decrease binding affinity&quot;],&quot;group&quot;:[0,&quot;Interactions&quot;]}],[0,{&quot;label&quot;:[0,&quot;Decrease in intrinsic activity&quot;],&quot;group&quot;:[0,&quot;Activity&quot;]}],[0,{&quot;label&quot;:[0,&quot;Decreased protein abundance&quot;],&quot;group&quot;:[0,&quot;Location and amount&quot;]}],[0,{&quot;label&quot;:[0,&quot;Folding destabilization&quot;],&quot;group&quot;:[0,&quot;Conformation and regulation&quot;]}],[0,{&quot;label&quot;:[0,&quot;Folding stabilization&quot;],&quot;group&quot;:[0,&quot;Conformation and regulation&quot;]}],[0,{&quot;label&quot;:[0,&quot;Gain of PTM site&quot;],&quot;group&quot;:[0,&quot;Chemistry and assembly&quot;]}],[0,{&quot;label&quot;:[0,&quot;Gain of a new activity&quot;],&quot;group&quot;:[0,&quot;Activity&quot;]}],[0,{&quot;label&quot;:[0,&quot;Gain of autoinhibition&quot;],&quot;group&quot;:[0,&quot;Conformation and regulation&quot;]}],[0,{&quot;label&quot;:[0,&quot;Gain of higher-order assembly&quot;],&quot;group&quot;:[0,&quot;Chemistry and assembly&quot;]}],[0,{&quot;label&quot;:[0,&quot;Gain of regulatory dependence&quot;],&quot;group&quot;:[0,&quot;Conformation and regulation&quot;]}],[0,{&quot;label&quot;:[0,&quot;Gain of response to a non-cognate signal&quot;],&quot;group&quot;:[0,&quot;Activity&quot;]}],[0,{&quot;label&quot;:[0,&quot;Increase binding affinity&quot;],&quot;group&quot;:[0,&quot;Interactions&quot;]}],[0,{&quot;label&quot;:[0,&quot;Increase in intrinsic activity&quot;],&quot;group&quot;:[0,&quot;Activity&quot;]}],[0,{&quot;label&quot;:[0,&quot;Increased protein abundance&quot;],&quot;group&quot;:[0,&quot;Location and amount&quot;]}],[0,{&quot;label&quot;:[0,&quot;Interactome rewiring&quot;],&quot;group&quot;:[0,&quot;Interactions&quot;]}],[0,{&quot;label&quot;:[0,&quot;Interference with the wild-type protein&quot;],&quot;group&quot;:[0,&quot;Activity&quot;]}],[0,{&quot;label&quot;:[0,&quot;Loss of PTM site&quot;],&quot;group&quot;:[0,&quot;Chemistry and assembly&quot;]}],[0,{&quot;label&quot;:[0,&quot;Loss of an activity&quot;],&quot;group&quot;:[0,&quot;Activity&quot;]}],[0,{&quot;label&quot;:[0,&quot;Loss of autoinhibition&quot;],&quot;group&quot;:[0,&quot;Conformation and regulation&quot;]}],[0,{&quot;label&quot;:[0,&quot;Loss of binding affinity&quot;],&quot;group&quot;:[0,&quot;Interactions&quot;]}],[0,{&quot;label&quot;:[0,&quot;Loss of higher-order assembly&quot;],&quot;group&quot;:[0,&quot;Chemistry and assembly&quot;]}],[0,{&quot;label&quot;:[0,&quot;Loss of regulatory dependence&quot;],&quot;group&quot;:[0,&quot;Conformation and regulation&quot;]}],[0,{&quot;label&quot;:[0,&quot;Loss of response to a cognate signal&quot;],&quot;group&quot;:[0,&quot;Activity&quot;]}],[0,{&quot;label&quot;:[0,&quot;New binding interface&quot;],&quot;group&quot;:[0,&quot;Interactions&quot;]}]]]}" ssr client="visible" opts="{&quot;name&quot;:&quot;GlyphLegend&quot;,&quot;value&quot;:true}" await-children><!--[--><div><p class="mb-3 max-w-3xl text-sm text-slate-600">One schematic per label, drawn once by hand and composed by the annotation. A per-variant
     drawing cannot be generated in a way worth trusting, but the vocabulary is closed — so the
     picture belongs to the <em>label</em>, and <code>target</code> supplies the caption, which is
     why one glyph serves every variant acting on a different partner.</p> <p class="mb-4 max-w-3xl text-sm text-slate-600">They are deliberately abstract. A glyph illustrates a <em>category</em>; it is not a depiction
@@ -133,4 +705,50 @@
   <path d="M32 4.5 v-2 M38 7 l1.6-1.6" stroke-width="1"/>
 </svg>
 <!----></span> <span>New binding interface</span></div><!--]--></div> <!--[0--><p class="mt-4 rounded bg-amber-50 px-3 py-2 text-xs text-amber-800">9 labels without a glyph, shown greyed with the
-      neutral shape: Decrease binding affinity, Decreased protein abundance, Folding destabilization, Folding stabilization, Gain of autoinhibition, Gain of regulatory dependence, Loss of an activity, Loss of higher-order assembly, Loss of response to a cognate signal. Add an SVG under <code>site/src/assets/glyphs/</code> named after the label.</p><!--]--></div><!--]--><!--astro:end--></astro-island></div></details><script type="module">var e=document.getElementById(`gene-filter`),t=document.querySelectorAll(`.gene-row`);e.addEventListener(`input`,()=>{let n=e.value.trim().toLowerCase();t.forEach(e=>{e.style.display=e.dataset.gene?.includes(n)?``:`none`})});var n=document.getElementById(`select-all`);n?.addEventListener(`change`,()=>{t.forEach(e=>{if(e.style.display===`none`)return;let t=e.querySelector(`input[data-gene-select]`);t&&(t.checked=n.checked)}),document.dispatchEvent(new CustomEvent(`gene-selection-changed`))});</script></main></div><dialog id="demo-notice" aria-labelledby="demo-notice-title" class="m-auto w-[calc(100%-2rem)] max-w-lg rounded-lg border border-slate-200 bg-white p-6 text-slate-800 shadow-xl backdrop:bg-slate-900/40"><h2 id="demo-notice-title" class="mb-3 text-lg font-semibold">This is a demo of OncoMechanome</h2><div class="space-y-3 text-sm text-slate-600"><p>OncoMechanome annotates cancer variants with the chain of molecular mechanisms that links the amino-acid change to the change in protein activity. Each chain is built step by step by a panel of LLM annotators, every step backed by a cited source, then consolidated by an arbiter.</p><p>This demo shows a sample of annotated variants. The full version, covering the complete set of gain-of-function variants, will be available soon.</p><p>Questions or feedback: <a class="text-sky-700 underline" href="mailto:benoit.de.witte@ulb.be">benoit.de.witte@ulb.be</a></p></div><form method="dialog" class="mt-5 flex justify-end"><button type="submit" class="rounded bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-700">Explore the demo</button></form></dialog><script type="module">var e=`oncomechanome:demo-notice-seen`,t=document.getElementById(`demo-notice`),n=!1;try{n=localStorage.getItem(e)===`1`}catch{}t&&!n&&(t.addEventListener(`close`,()=>{try{localStorage.setItem(e,`1`)}catch{}}),t.showModal());</script></body></html>
+      neutral shape: Decrease binding affinity, Decreased protein abundance, Folding destabilization, Folding stabilization, Gain of autoinhibition, Gain of regulatory dependence, Loss of an activity, Loss of higher-order assembly, Loss of response to a cognate signal. Add an SVG under <code>site/src/assets/glyphs/</code> named after the label.</p><!--]--></div><!--]--><!--astro:end--></astro-island>
+    </div>
+  </details>
+
+  
+  <script type="module">var e=document.getElementById(`gene-filter`),t=document.querySelectorAll(`.gene-row`);e.addEventListener(`input`,()=>{let n=e.value.trim().toLowerCase();t.forEach(e=>{e.style.display=e.dataset.gene?.includes(n)?``:`none`})});var n=document.getElementById(`select-all`);n?.addEventListener(`change`,()=>{t.forEach(e=>{if(e.style.display===`none`)return;let t=e.querySelector(`input[data-gene-select]`);t&&(t.checked=n.checked)}),document.dispatchEvent(new CustomEvent(`gene-selection-changed`))});</script>
+        </div>
+        <footer class="mt-12 border-t border-slate-200 pt-4 text-xs text-slate-500">
+  <div class="flex flex-col gap-1 sm:flex-row sm:flex-wrap sm:items-baseline sm:gap-x-4">
+    <span>
+      Benoît de Witte ·
+      <a class="text-sky-700 underline" href="mailto:benoit.de.witte@ulb.be">benoit.de.witte@ulb.be</a>
+    </span>
+    <span>3BIO &amp; IRIBHM, Université libre de Bruxelles</span>
+    <span>Funded by F.R.S.-FNRS Télévie</span>
+  </div>
+</footer>
+      </main>
+    </div>
+    <dialog id="demo-notice" aria-labelledby="demo-notice-title" class="m-auto w-[calc(100%-2rem)] max-w-lg rounded-lg border border-slate-200 bg-white p-6 text-slate-800 shadow-xl backdrop:bg-slate-900/40">
+  <h2 id="demo-notice-title" class="mb-3 text-lg font-semibold">This is a demo of OncoMechanome</h2>
+  <div class="space-y-3 text-sm text-slate-600">
+    <p>
+      OncoMechanome annotates cancer variants with the chain of molecular mechanisms that links the
+      amino-acid change to the change in protein activity. Each chain is built step by step by a
+      panel of LLM annotators, every step backed by a cited source, then consolidated by an arbiter.
+    </p>
+    <p>
+      This demo shows a sample of annotated variants. The full version, covering the complete set
+      of gain-of-function variants, will be available soon.
+    </p>
+    <p>
+      Questions or feedback: 
+      <a class="text-sky-700 underline" href="mailto:benoit.de.witte@ulb.be">benoit.de.witte@ulb.be</a>
+    </p>
+  </div>
+  <form method="dialog" class="mt-5 flex justify-end">
+    <button type="submit" class="rounded bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-700">
+      Explore the demo
+    </button>
+  </form>
+</dialog>
+
+<script type="module">var e=`oncomechanome:demo-notice-seen`,t=document.getElementById(`demo-notice`),n=!1;try{n=localStorage.getItem(e)===`1`}catch{}t&&!n&&(t.addEventListener(`close`,()=>{try{localStorage.setItem(e,`1`)}catch{}}),t.showModal());</script>
+
+    <script type="module">var e=document.documentElement,t=document.getElementById(`nav-open`),n=window.matchMedia(`(min-width: 1024px)`);function r(e){try{localStorage.setItem(`oncomechanome:nav-collapsed`,e?`1`:`0`)}catch{}}function i(){n.matches?(delete e.dataset.navCollapsed,r(!1)):(e.dataset.navOpen=``,t.setAttribute(`aria-expanded`,`true`))}function a(){n.matches?(e.dataset.navCollapsed=``,r(!0)):(delete e.dataset.navOpen,t.setAttribute(`aria-expanded`,`false`))}t.addEventListener(`click`,i),document.getElementById(`nav-close`).addEventListener(`click`,a),document.getElementById(`nav-backdrop`).addEventListener(`click`,a),document.addEventListener(`keydown`,t=>{t.key===`Escape`&&`navOpen`in e.dataset&&a()}),n.addEventListener(`change`,()=>{delete e.dataset.navOpen,t.setAttribute(`aria-expanded`,`false`)});</script></body>
+</html>
